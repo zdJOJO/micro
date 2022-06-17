@@ -55,8 +55,8 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src')
       },
       {
-        find: '@pages',
-        replacement: path.resolve(__dirname, 'src/pages')
+        find: '@modules',
+        replacement: path.resolve(__dirname, 'src/modules')
       }
     ]
   },

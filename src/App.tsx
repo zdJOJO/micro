@@ -1,14 +1,16 @@
-import React from 'react'
-import { Button } from 'antd'
-import PedestalLayout from './Layout'
+import React, { Suspense } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Routes from './route'
 import './App.less'
 
 function App() {
   return (
     <div className="App">
-      <PedestalLayout>
-        <Button type="primary">sssz</Button>
-      </PedestalLayout>
+      <Suspense fallback={<div>loading...</div>}>
+        <Router>
+          <Routes />
+        </Router>
+      </Suspense>
     </div>
   )
 }
