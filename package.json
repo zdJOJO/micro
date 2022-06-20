@@ -2,6 +2,7 @@
   "name": "micro",
   "private": true,
   "version": "0.0.0",
+  "main": "src/main.tsx",
   "scripts": {
     "dev": "vite",
     "test": "vite --mode test",
@@ -28,7 +29,8 @@
     "qs": "^6.10.3",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-router-dom": "6.3.0"
+    "react-router-dom": "6.3.0",
+    "react-router-dom-v5": "npm:react-router-dom@^5.3.3"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.8",
