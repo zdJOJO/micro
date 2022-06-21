@@ -3,10 +3,10 @@ import { PieChartOutlined } from '@ant-design/icons'
 import PedestalLayout from '@/Layout'
 import { RouteObject } from 'react-router-dom'
 import { ROUTE_PATH } from './enum'
-import NotFound from '@/404'
 
 const App1 = lazy(() => import('@/Modules/App1'))
 const App2 = lazy(() => import('@/Modules/App2'))
+const NotFound = lazy(() => import('@/404'))
 
 interface IRoute extends RouteObject {
   label?: string
@@ -19,7 +19,7 @@ const routes: Array<IRoute> = [
     path: '/',
     element: <PedestalLayout />,
     children: [
-      // { index: true, element: <App1 /> },
+      { index: true, element: <App1 /> },
       {
         path: `${ROUTE_PATH.APP_1}`,
         element: <App1 />,

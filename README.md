@@ -11,3 +11,20 @@
 [github issue](https://github.com/micro-zoe/micro-app/issues/283)
 
 2.  **基座应用** 和 **子应用** 都是用 `BrowserRouter history` 路由， 切换到某个子应用，然后刷新， 页面 404
+
+**解决方案**： [github issue](https://github.com/micro-zoe/micro-app/issues/431)
+如果 `基座应用` 使用了 `react-router` v6 版本，需要配置基路由`baseroute` 加入 `*` 号
+
+    e.g.
+    const App1 = () => {
+      return (
+        <div>
+          <micro-app
+          name={ROUTE_PATH.APP_1}
+          url="http://127.0.0.1:8001/"
+          baseroute='/app1/*'
+        />
+        </div>
+      )
+    }
+    export default App1

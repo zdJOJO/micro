@@ -4,7 +4,7 @@ import React from 'react'
 const App1 = () => {
   return (
     <div>
-      <micro-app name={ROUTE_PATH.APP_1} url="http://127.0.0.1:3001/" baseroute={`/${ROUTE_PATH.APP_1}`} />
+      <micro-app name={ROUTE_PATH.APP_1} url="http://127.0.0.1:8001/" baseroute={`/${ROUTE_PATH.APP_1}`} />
     </div>
   )
 }

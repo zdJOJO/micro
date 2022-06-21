@@ -13,7 +13,7 @@ const themeVariables = lessToJS(fs.readFileSync(path.resolve(__dirname, './src/t
 // const env: 'dev' | 'test' = 'dev'
 
 const server: ServerOptions = {
-  port: 8004
+  port: 8000
 }
 
 // https://vitejs.dev/config/

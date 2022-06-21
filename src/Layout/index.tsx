@@ -34,7 +34,7 @@ const PedestalLayout = () => {
         icon: route.icon,
         label: route.label,
         onClick: () => {
-          navigate(route.path)
+          navigate((route.path as string)?.replace('/*', ''))
         }
       }))
   }, [transformRoutes])
